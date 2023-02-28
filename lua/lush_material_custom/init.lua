@@ -55,7 +55,7 @@ local theme = lush(function(injected_functions)
 
     darkgreen = hsl(84, 40, 14),
     darkblue = hsl(213, 89, 26),
-    darkred = hsl(357, 81, 21),
+    darkred = hsl(357, 40, 16),
 
     columns = hsl(0, 0, 20),
     nontext = hsl(0, 0, 30),
