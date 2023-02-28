@@ -104,8 +104,10 @@ local theme = lush(function(injected_functions)
     iCursor      { bg = colors.yellow, fg = colors.bg },
     vCursor      { bg = colors.blue, fg = colors.bg },
     rCursor      { bg = colors.red, fg = colors.bg },
-    CursorColumn { bg = colors.columns }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine   { bg = colors.columns }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    -- CursorColumn { bg = colors.columns }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    -- CursorLine   { bg = colors.columns }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorColumn { bg = colors.bg }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine   { bg = colors.bg }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { fg = colors.blue }, -- Directory names (and other special names in listings)
 
     DiffAdd      { bg = colors.darkgreen, fg = colors.green }, -- Diff mode: Added line |diff.txt|
