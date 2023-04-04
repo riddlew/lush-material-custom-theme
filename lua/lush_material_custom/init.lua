@@ -64,6 +64,8 @@ local theme = lush(function(injected_functions)
     selected_tab = hsl(225, 12, 32),
     lightgrey = hsl(210, 17, 40),
     lightgrey2 = hsl(210, 17, 72),
+
+    barbar_inactive_sign = hsl('#4d4d4d'),
   }
 
   -- vim.g.terminal_color_0          = colors.borders
@@ -358,6 +360,13 @@ local theme = lush(function(injected_functions)
     mkdCodeStart { fg = colors.borders },
     mkdCodeEnd { fg = colors.borders },
     mkdCode { fg = colors.yellow },
+
+    -- romgrk/barbar.nvim
+    BufferCurrent { bg = colors.selected_tab },
+    BufferCurrentIndex { bg = colors.selected_tab },
+    BufferCurrentMod { bg = colors.selected_tab },
+    BufferCurrentSign { bg = colors.selected_tab, fg = colors.barbar_inactive_sign },
+    BufferCurrentTarget { bg = colors.selected_tab },
 
 
     -- Tree-Sitter syntax groups.
